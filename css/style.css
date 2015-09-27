@@ -47,6 +47,10 @@ p+a {
 p+p {
 	padding: 10px;
 }
+p {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
 .ba-grid+.ba-grid {
 	margin-top: 50px;
 }
@@ -168,18 +172,15 @@ p+p {
 	visibility: hidden;
 	position: absolute;
 	background: #7F7E93;
-
 	-webkit-transition-property: visibility;
 	transition-property: visibility;
 	-webkit-transition-delay: .2s;
 	transition-delay: .2s;
 }
-
 .ba-menu__submenu_lvl_0 {
 	top: calc(100% + 100px);
 	padding: 10px 0;
 }
-
 .ba-menu__submenu_lvl_0:before {
 	content: '';
 	position: absolute;
@@ -193,22 +194,18 @@ p+p {
 	border-color: #7F7E93 transparent;
 	border-style: solid;
 }
-
 .ba-menu__submenu_lvl_1 {
 	top: -5px;
 	right: 100%;
 	white-space: nowrap;
 }
-
 .ba-menu__submenu-item {
 	position: relative;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .ba-menu__submenu-item:last-child {
 	border: none;
 }
-
 .ba-menu__submenu-item > a {
 	display: block;
 	text-decoration: none;
@@ -219,19 +216,15 @@ p+p {
 	font-weight: 700;
 	line-height: 40px;
 }
-
 .ba-menu__submenu-item:hover {
 	background-color: #F06862;
 }
-
 .ba-menu__submenu-item:hover > a {
 	color: #FFF;
 }
-
 .ba-menu__submenu-item_has-submenu:hover > .ba-menu__submenu {
 	visibility: visible;
 }
-
 
 /*banner*/
 .ba-banner {
@@ -257,8 +250,6 @@ p+p {
 	font-weight: 400;
 	letter-spacing: 0.05em;
 }
-
-
 .ba-banner__text__btn {
 	color: #FFF;
 }
@@ -269,12 +260,57 @@ p+p {
 	margin-left: 10px;
 }
 
+/*section one*/
+.ba-section h2 {
+	font-size: 1.75em;
+	margin-bottom: 1em;
+}
+.ba-section p {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	margin-bottom: 2em;
+}
+.ba-section__one {
+	background: #F06862;
+	color: #fff;
+}
+.first-column {
+	padding: 4em 4em 2em 0;
+}
+.ba-section-one__button {
+color: #fff;
+}
+.second-column__top,
+.second-column__bottom {
+	position: relative;
+	padding: 4em 0 2em 4em;
+	z-index: 1;
+}
+.second-column__top:before,
+.second-column__bottom:before {
+	content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1000%;
+	background: #f5f5f5;
+	z-index: -1;
+}
+.second-column__bottom:before {
+	background: #FFF;
+}
+.second-column h3 {
+	color: #f06862;
+	margin-bottom: 1em;
+}
+.second-column p {
+	color: #868686;
+}
+
 /*section two*/
 .ba-section-two {
 	background: #F5F5F5;
-}
-.ba-section-two__img {
-	/*width: 400px;*/
 }
 .ba-section-two__img-wrapper {
 	position: relative;
@@ -587,7 +623,6 @@ background: #EEEEEE;
 }
 .ba-porta__icon .fa:after {
 	background-color: #f06862;
-	w
 }
 .ba-porta__icon .fa{
 	height: 5em;
