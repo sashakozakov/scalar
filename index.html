@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<title>Start</title>
+	<title>SCALAR</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,30 +21,61 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="ba-header">
-	<div class="ba-full-container">
-		<h1 class="ba-header__logo__text"><a class="ba-header__logo fa-cube" href="#">Scalar</a></h1>
-		<nav role="navigation" class="navigation">
-			<ul class="ba-main-menu">
-			<li><a href="#" class="active">Home</a></li>
-				<li class="ba-main-menu__menu-item"><a href="#">Page Layouts</a>
-					<ul class="submenu">
-						<li><a href="#">Left sidebar</a></li>
-						<li><a href="#">Right sidebar</a></li>
-						<li><a href="#">No sidebar</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Submenu</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Elements</a></li>
-			</ul>
-		</nav>
-	</div>
-	</header>
+<header class="ba-header">
+  <div class="ba-container ba-container_centered">
+<h1 class="ba-header__logo__text"><a class="ba-header__logo fa-cube" href="#">Scalar</a></h1>
+    <!-- menu -->
+
+    <nav class="ba_float_right">
+      <ul class="ba-menu">
+        <li class="ba-menu__item ba-menu__item_is-current">
+          <a href="#">Home</a>
+        </li>
+        <li class="ba-menu__item ba-menu__item_has-submenu">
+          <a href="#">Page layouts</a>
+
+          <ul class="ba-menu__submenu ba-menu__submenu_lvl_0">
+            <li class="ba-menu__submenu-item">
+              <a href="#">Left sidebar</a>
+            </li>
+            <li class="ba-menu__submenu-item">
+              <a href="#">Right sidebar</a>
+            </li>
+            <li class="ba-menu__submenu-item">
+              <a href="#">No sidebar</a>
+            </li>
+            <li class="ba-menu__submenu-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="ba-menu__submenu-item ba-menu__submenu-item_has-submenu">
+              <a href="#">Submenu</a>
+
+              <ul class="ba-menu__submenu ba-menu__submenu_lvl_1">
+                <li class="ba-menu__submenu-item"><a href="#">Option one</a></li>
+                <li class="ba-menu__submenu-item"><a href="#">Option two</a></li>
+                <li class="ba-menu__submenu-item"><a href="#">Option three</a></li>
+                <li class="ba-menu__submenu-item"><a href="#">Option four</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="ba-menu__item">
+          <a href="#">Elements</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- menu -->
+
+  </div>
+
+</header>
+
 
 	<main role="main">
 
 <section class="ba-banner">
+<div class="ba-container">
 	<div class="ba-banner__text">
 		<h2 class="ba-banner__text__title">DONEC AMET SED <br/>
 			EGET FELIS FACILISIS</h2>
@@ -52,11 +83,44 @@
 				ERAT ORNARE CONSEQUAT</p>
 				<a href="#" class="ba-banner__text__btn ba-btn icon-after fa-chevron-right">Read More</a>
 	</div>
+	</div>
 </section>
 
 
 
-.<!-- BEGIN people  -->
+<!-- BEGIN PORTA  -->
+<section class="porta cf">
+<div class="ba-container">
+<h2 class="porta__header__title-h2">ALIQUAM PORTA</h2>
+<p class="porta__header__title-p">PELLENTESQUE FERMENTUM DOLOR ALIQUAM QUAM LECTUS FACILISIS DOLORE</p>
+<div class="ba-grid">
+	<div class="ba-width-1-3">
+		<div class="ba-porta__icon">
+			<i class="fa fa-camera-retro"></i>
+			<h3 class="ba-porta__icon-title">Cras iaculis</h3>
+			<p class="ba-porta__icon-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+		</div>
+	</div>
+	<div class="ba-width-1-3">
+		<div class="ba-porta__icon">
+			<i class="fa fa-coffee"></i>
+			<h3 class="ba-porta__icon-title">FUSCE PELLENT</h3>
+			<p class="ba-porta__icon-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+		</div>
+	</div>
+	<div class="ba-width-1-3">
+		<div class="ba-porta__icon">
+			<i class="fa fa-camera-retro"></i>
+			<h3 class="ba-porta__icon-title">Cras iaculis</h3>
+			<p class="ba-porta__icon-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<!-- END PORTA -->
+
+<!-- BEGIN people  -->
 <section class="people cf">
 <div class="ba-container">
 <h2 class="people__header__title">Morbi interdum mollis sed<br>  Phasellus lacinia</h2>
