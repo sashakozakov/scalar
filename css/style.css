@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -6,3 +8,360 @@ button{
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 100%;
+}
+body {
+	font-size: 11pt;
+	background: #F5F5F5;
+	color: #868686;
+}
+a {
+	text-decoration: none;
+	font-family: "Montserrat", Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+h2+p {
+	line-height: 1.5em;
+	font-size: 1.25em;
+}
+p+a {
+	margin-top: 30px;
+}
+p+p {
+	padding: 10px;
+}
+.ba-grid+.ba-grid {
+margin-top: 50px;
+}
+.ba-full-container {
+	max-width: 100%;
+	position: relative;
+}
+.ba-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+/*button styles*/
+.ba-btn {
+	border:2px solid;
+	padding: 15px 30px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.ba-btn:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+/*Header*/
+.ba-header {
+	background: #7f7e93;
+	height: 4.5em;
+	left: 0;
+	line-height: 4.5em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+.ba-header__logo {
+	color: #fff;
+}
+.ba-header__logo:before {
+	content: "/f1b2";
+	font-family: FontAwesome;
+	color: #f06862;
+	margin-right: 10px;
+}
+
+.ba-header__logo__text {
+	font-size: 1.25em;
+	height: inherit;
+	left: 70px;
+	line-height: 2.5em;
+	position: absolute;
+	top: 0;
+}
+/*Menu*/
+.navigation {
+	position: absolute;
+	top: 0;
+	right: 60px;
+}
+
+.ba-main-menu {
+	list-style: none;
+}
+.ba-main-menu>li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.ba-main-menu li a {
+	letter-spacing: 0.05em;
+	padding: 0px 15px;
+	color: #FFF;
+	display: block;
+	line-height: 2.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.ba-main-menu li .active {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.ba-main-menu li a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.ba-main-menu__menu-item {
+	position: relative;
+}
+.submenu li{
+	position: absolute;
+	top: 60px;
+	left: 120px;
+	list-style: none;
+	display: none;
+}
+.submenu li {
+background: #7f7e93;
+}
+.submenu li:hover {
+background: #f06862;
+}
+.ba-main-menu li:hover .submenu {
+	display: block;
+}
+
+
+
+/*banner*/
+.ba-banner {
+	margin-top:4.5em;
+	padding: 10em 0 8em 4em;
+	height: 85vh;
+	min-height: 300px;
+	background: #f5f5fd url(../img/banner.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:10000;
+}
+.ba-banner__text {
+	color: #FFF;
+}
+.ba-banner__text__title {
+	line-height: 1.5em;
+	font-size: 2.25em;
+
+}
+.ba-banner__text__p {
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}
+
+
+.ba-banner__text__btn {
+	color: #FFF;
+}
+.ba-banner__text__btn:before {
+	content: "/f054";
+	font-family: FontAwesome;
+	float: right;
+	margin-left: 10px;
+}
+
+
+/*people*/
+.people {
+	background: #747389;
+	padding: 5em 0;
+}
+.people__header__title {
+	text-align: center;
+	padding: 10px 0 50px;
+	color: #FFF;
+}
+.people__information {
+	text-align: center;
+}
+.man {
+	padding: 0;
+	background: rgba(255, 255, 255, 0.075);
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.man .man__img {
+	display: block;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.man__name {
+	margin-top: 15px;
+	color: #FFF;
+}
+.man__job {
+	color: #cbcbd3;
+}
+.arrow_box {
+	position: relative;
+	background:rgba(0, 0, 0, 0.25);
+	padding: 1em 2em;
+    margin: 0 1.2em 2em;
+	font-style: italic;
+	color: rgb(223, 222, 228);
+	line-height: 1.8em;
+}
+.arrow_box:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgba(0, 0, 0, 0.25);
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+
+
+/*features section*/
+
+.ba-features {
+background: #FFF;
+padding: 80px 0;
+}
+.ba-features__content {
+width: 70%;
+padding-left: 15px;
+border-left:1px solid rgba(144, 144, 144, 0.25);
+}
+.ba-features__icon {
+	width: 20%;
+float: left;
+}
+.ba-features__content {
+	width: 80%;
+float: left;
+}
+
+.ba-features__title {
+color: #7F7F7F;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: 0 0 1em 0;
+}
+
+.ba-features__p {
+    line-height: 1.7em;
+}
+
+
+
+
+
+
+/*footer*/
+.ba-footer {
+	padding: 100px 0;
+}
+
+
+.ba-footer__social-links{
+	text-align: center;
+}
+.ba-footer__social-links li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+
+.copyright {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*End footer*/
+
+
+/*social icons*/
+.fa {
+	display: block;
+	height: 3em;
+	width: 3em;
+	padding-top: 0.7em;
+	line-height: 3em;
+	position: relative;
+	text-align: center;
+}
+.fa:before {
+	color: #A5A5a5;
+	font-size: 1.5em;
+	position: relative;
+	z-index: 1;
+}
+
+.fa:after {
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	content: '';
+	height: inherit;
+	left: 0;
+	line-height: inherit;
+	position: absolute;
+	top: 0;
+	width: inherit;
+}
+
+/*styles for footer*/
+.ba-footer__social-links .fa:after {
+	background-color: rgba(144, 144, 144, 0.2);
+}
+.ba-footer__social-links .fa:hover:before {
+	-moz-transition: color 0.5s ease-in-out;
+	-webkit-transition: color 0.5s ease-in-out;
+	-ms-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+	color: #FFF;
+}
+.ba-footer__social-links .fa:hover:after {
+	-moz-transition: background-color 0.5s ease-in-out;
+	-webkit-transition: background-color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
+	background: #F06862;
+}
+
+/*styles for feature icons*/
+.ba-features__icon .fa:before{
+	color: #FFF;
+}
+.ba-features__icon .fa:after {
+background-color: #f06862;
+}
+
+
