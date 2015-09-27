@@ -284,21 +284,22 @@ p+p {
 .ba-section-two__column-second {
 	margin-left: 45%;
 }
-.ba-section-two__header--2 {
+.ba-section-two__header-h2 {
 	color: #7F7F7F;
 	font-size: 1.75em;
 	line-height: 1.5em;
 	padding-top: 2em;
 }
 
-.ba-section-two__header--3 {
+.ba-section-two__header-h3 {
 	color: #A5A5A5;
 	padding-top: 1em;
 	font-weight: 400;
 	font-size: 1.25em;
 	line-height: 1.5em;
 }
-.ba-section-two__content, .ba-section-three__column__content {
+.ba-section-two__content,
+.ba-section-three__column__content {
 	color: #868686;
 	font-size: .8em;
 	line-height: 1.65em;
@@ -306,9 +307,7 @@ p+p {
 	font-size: 17px;
 }
 .ba-section-two__button {
-	display: inline-block;
 	color: #7F7F7F;
-	border: 2px solid #7F7F7F;
 	padding: 0 1.35em;
 	line-height: 3em;
 	margin-bottom: 3em;
