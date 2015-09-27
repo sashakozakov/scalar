@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 a,
 input[type="submit"],
@@ -291,13 +292,24 @@ margin-top: 50px;
 }
 
 .ba-porta__icon{
-margin-top: 5em;
+margin-top: 8em;
+}
+
+.ba-porta__icon .fa{
 }
 .ba-porta__icon:before {
 
 }
-
-
+.ba-porta__icon-title {
+margin-top: 50px;
+}
+.ba-porta__icon-text {
+padding: 20px 0;
+font-family: 'Source Sans Pro', Helvetica, sans-serif;
+color: rgb(134, 134, 134);
+line-height: 28.6px;
+font-size: 18px;
+}
 
 
 /*people*/
